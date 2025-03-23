@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Astral - Générateur de leads révolutionnaire avec paiement uniquement après conversion. Boostez votre croissance sans risque financier avec notre approche innovante de génération de leads qualifiés.">
+    <meta name="keywords" content="génération leads, leads qualifiés, marketing B2B, conversion leads, prospection commerciale, développement commercial, leads exclusifs">
+    <meta name="author" content="Astral">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Astral - Tutoyer les étoiles | Connecteur d'Opportunités">
+    <meta property="og:description" content="Découvrez Astral, votre partenaire en génération de leads avec paiement uniquement après conversion. Maximisez votre ROI sans risque financier.">
+    <meta property="og:image" content="https://astralleads.fr/assets/astral-og-image.jpg">
+    <meta property="og:url" content="https://astralleads.fr">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://astralleads.fr">
+    <title>Astral - Tutoyer les étoiles | Connecteur d'Opportunités</title>
+    
+    <!-- Preload des ressources critiques -->
+    <link rel="preload" href="assets/astral-logo.svg" as="image">
+    <link rel="preload" href="assets/astral-logo-large.svg" as="image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Futura:wght@400;500;700&family=Avenir+Next:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    <!-- Fond étoilé optimisé -->
+    <div class="stars-container" aria-hidden="true">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </div>
+    
+    <header role="banner">
+        <div class="container">
+            <nav role="navigation" aria-label="Navigation principale">
+                <div class="nav-content">
+                    <div class="logo">
+                        <a href="#" aria-label="Accueil Astral">
+                            <img src="assets/astral-logo.svg" alt="Logo Astral - Connecteur d'Opportunités" width="160" height="40">
+                        </a>
+                    </div>
+                    <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu de navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul id="nav-menu" class="nav-links">
+                        <li><a href="#services" aria-label="Nos services">Services</a></li>
+                        <li><a href="#avantages" aria-label="Nos avantages">Avantages</a></li>
+                        <li><a href="#fonctionnement" aria-label="Notre fonctionnement">Fonctionnement</a></li>
+                        <li><a href="#temoignages" aria-label="Témoignages clients">Témoignages</a></li>
+                        <li><a href="#contact" class="btn-primary" aria-label="Nous contacter">Nous contacter</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="scroll-progress" role="progressbar" aria-label="Progression de la lecture">
+                <div class="scroll-progress-bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-bg-overlay" aria-hidden="true"></div>
+            <div class="hero-content-wrapper">
+                <div class="container">
+                    <div class="hero-logo-container">
+                        <img src="assets/astral-logo-large.svg" alt="Logo Astral" class="hero-logo" width="550" height="200">
+                    </div>
+                    <div class="hero-content">
+                        <h1 id="hero-title"><span class="subtitle">Tutoyer les étoiles</span></h1>
+                        <div class="tagline-container">
+                            <h2>Connecteur d'Opportunités</h2>
+                            <div class="tagline-separator" aria-hidden="true"></div>
+                        </div>
+                        
+                        <div class="hero-advantages" role="list">
+                            <div class="advantage-item" role="listitem">
+                                <div class="advantage-icon" aria-hidden="true">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="advantage-text">
+                                    <span class="advantage-highlight">Ne payez que pour les leads convertis</span>
+                                </div>
+                            </div>
+                            <div class="advantage-item" role="listitem">
+                                <div class="advantage-icon" aria-hidden="true">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <div class="advantage-text">
+                                    <span class="advantage-highlight">Boostez votre croissance sans risque financier</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="cta-buttons">
+                            <a href="#contact" class="btn-primary" aria-label="Demander une démonstration">Demander une démo</a>
+                            <a href="#fonctionnement" class="btn-secondary" aria-label="Découvrir notre fonctionnement">Comment ça marche</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section-services">
+            <div class="container">
+                <h2 class="section-title">NOTRE EXPERTISE</h2>
+                <div class="services-grid">
+                    <div class="service-card" data-aos="fade-up">
+                        <div class="service-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>ACQUISITION STRATÉGIQUE</h3>
+                        <p>Notre expertise permet d'identifier et de qualifier avec précision les prospects à fort potentiel, parfaitement alignés avec votre stratégie de développement.</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>PARTENARIAT GAGNANT</h3>
+                        <p>Notre engagement : votre succès est notre priorité. Vous ne rémunérez notre accompagnement que lorsque nos leads deviennent vos clients.</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>CROISSANCE MAÎTRISÉE</h3>
+                        <p>Développez sereinement votre activité grâce à un flux constant d'opportunités commerciales qualifiées et exclusives.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="avantages" class="section-avantages">
+            <div class="container">
+                <div class="avantages-content">
+                    <div class="avantages-text">
+                        <h2 class="section-title">POURQUOI CHOISIR ASTRAL ?</h2>
+                        <ul class="avantages-list">
+                            <li>
+                                <span class="check-icon"><i class="fas fa-check-circle"></i></span>
+                                <div>
+                                    <h3>SÉCURITÉ FINANCIÈRE GARANTIE</h3>
+                                    <p>Notre engagement à la performance : vous ne réglez que lorsque nos leads deviennent vos clients, assurant un retour sur investissement positif.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="check-icon"><i class="fas fa-check-circle"></i></span>
+                                <div>
+                                    <h3>TRÉSORERIE OPTIMISÉE</h3>
+                                    <p>Notre modèle innovant préserve vos ressources financières en éliminant les investissements marketing non productifs.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="check-icon"><i class="fas fa-check-circle"></i></span>
+                                <div>
+                                    <h3>EXCELLENCE OPÉRATIONNELLE</h3>
+                                    <p>Chaque lead est rigoureusement qualifié selon vos critères spécifiques pour garantir une adéquation parfaite avec vos attentes.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="check-icon"><i class="fas fa-check-circle"></i></span>
+                                <div>
+                                    <h3>EXPERTISE SECTORIELLE APPROFONDIE</h3>
+                                    <p>Notre équipe maîtrise les spécificités de votre secteur pour un ciblage optimal et des résultats concrets.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="avantages-image">
+                        <img src="assets/astral-why.svg" 
+                             alt="Illustration des avantages Astral sous forme de bouclier : Sécurité financière, Trésorerie optimisée, Excellence opérationnelle et Expertise sectorielle" 
+                             width="500" 
+                             height="500"
+                             loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="comparaison" class="section-comparaison">
+            <div class="container">
+                <h2 class="section-title">NOTRE ENGAGEMENT DE VALEUR</h2>
+                
+                <div class="comparison-container">
+                    <div class="comparison-box traditional">
+                        <h3>APPROCHE CONVENTIONNELLE</h3>
+                        <div class="price">
+                            <span class="amount">50-200€</span>
+                            <span class="unit">par prospect</span>
+                        </div>
+                        
+                        <div class="divider"></div>
+                        
+                        <ul class="comparison-list negative">
+                            <li>
+                                <span class="icon"><i class="fas fa-times"></i></span>
+                                <p>Investissement initial conséquent sans garantie de résultat</p>
+                            </li>
+                            <li>
+                                <span class="icon"><i class="fas fa-times"></i></span>
+                                <p>Prospects partagés entre plusieurs entreprises</p>
+                            </li>
+                            <li>
+                                <span class="icon"><i class="fas fa-times"></i></span>
+                                <p>Qualification approximative des opportunités</p>
+                            </li>
+                            <li>
+                                <span class="icon"><i class="fas fa-times"></i></span>
+                                <p>Engagement financier sans visibilité sur le ROI</p>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="comparison-box astral">
+                        <h3>PARTENARIAT ASTRAL</h3>
+                        <div class="price">
+                            <span class="amount">0€</span>
+                            <span class="unit">jusqu'à la conversion</span>
+                        </div>
+                        
+                        <div class="divider"></div>
+                        
+                        <ul class="comparison-list positive">
+                            <li>
+                                <span class="icon"><i class="fas fa-check"></i></span>
+                                <p>Rémunération uniquement sur succès : alignement total de nos intérêts</p>
+                            </li>
+                            <li>
+                                <span class="icon"><i class="fas fa-check"></i></span>
+                                <p>Opportunités commerciales 100% exclusives et dédiées</p>
+                            </li>
+                            <li>
+                                <span class="icon"><i class="fas fa-check"></i></span>
+                                <p>Qualification approfondie selon vos critères spécifiques</p>
+                            </li>
+                            <li>
+                                <span class="icon"><i class="fas fa-check"></i></span>
+                                <p>Croissance maîtrisée sans engagement financier initial</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="comparison-cta">
+                    <a href="#contact" class="btn-primary">Découvrir notre partenariat</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="fonctionnement" class="section-fonctionnement">
+            <div class="container">
+                <h2 class="section-title">NOTRE MÉTHODOLOGIE</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>ANALYSE STRATÉGIQUE</h3>
+                            <p>Nous réalisons une étude approfondie de votre activité et de vos objectifs pour définir avec précision le profil de vos prospects idéaux.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>PROSPECTION CIBLÉE</h3>
+                            <p>Nos experts déploient des stratégies multicanales sophistiquées pour identifier et engager vos prospects à fort potentiel.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>QUALIFICATION APPROFONDIE</h3>
+                            <p>Chaque opportunité fait l'objet d'une évaluation méticuleuse selon vos critères pour garantir sa pertinence et son potentiel.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>ACCOMPAGNEMENT PERSONNALISÉ</h3>
+                            <p>Les leads qualifiés vous sont transmis avec un suivi constant de notre équipe pour optimiser votre taux de conversion.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>RÉMUNÉRATION AU SUCCÈS</h3>
+                            <p>Notre rémunération est directement liée à votre réussite : vous ne payez que lorsqu'un lead devient client, garantissant un alignement parfait de nos intérêts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="temoignages" class="section-temoignages">
+            <div class="container">
+                <h2 class="section-title">L'EXPÉRIENCE DE NOS PARTENAIRES</h2>
+                <div class="testimonials-slider">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"La collaboration avec Astral a transformé notre approche commerciale. La qualité exceptionnelle des leads et leur modèle financier innovant nous ont permis d'accélérer notre croissance en toute sérénité."</p>
+                            <div class="testimonial-author">
+                                <img src="assets/user-avatar.svg" alt="Témoignage client">
+                                <div>
+                                    <h4>Sophie Marceau</h4>
+                                    <p>Directrice Commerciale, TechSolutions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"Astral a révolutionné notre stratégie d'acquisition. Leur approche basée sur la performance nous permet de développer notre portefeuille clients tout en maîtrisant nos investissements."</p>
+                            <div class="testimonial-author">
+                                <img src="assets/user-avatar.svg" alt="Témoignage client">
+                                <div>
+                                    <h4>Pierre Durand</h4>
+                                    <p>CEO, InnovConsulting</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"L'expertise d'Astral en matière de ciblage est remarquable. Chaque lead correspond parfaitement à notre cible idéale, ce qui a significativement amélioré notre efficacité commerciale."</p>
+                            <div class="testimonial-author">
+                                <img src="assets/user-avatar.svg" alt="Témoignage client">
+                                <div>
+                                    <h4>Marie Laurent</h4>
+                                    <p>Responsable Marketing, GlobalService</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-contact" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 id="contact-title" class="section-title">CONCRÉTISONS VOTRE RÉUSSITE</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <p>Échangeons sur vos objectifs de développement et découvrez comment notre expertise peut vous accompagner vers une croissance maîtrisée et durable.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:contact@astral-leads.com">contact@astral-leads.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+33100000000">+33 1 00 00 00 00</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Tour Astral, 75008 Paris, France</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form action="https://formsubmit.co/bacqueteliot@gmail.com" method="post" id="contact-form">
+                            <input type="hidden" name="_next" value="https://astralleads.fr/merci.html">
+                            <input type="hidden" name="_subject" value="Nouvelle demande de contact Astral">
+                            <input type="hidden" name="_captcha" value="false">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Nom complet</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="company">Entreprise</label>
+                                    <input type="text" id="company" name="company" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email professionnel</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Téléphone</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="message">Comment pouvons-nous vous aider?</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary">Envoyer ma demande</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/astral-logo-white.svg" alt="Logo Astral" width="180" height="45">
+                    <p class="tagline">Astral - Tutoyer les étoiles</p>
+                </div>
+                <nav class="footer-links" aria-label="Navigation du pied de page">
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services" aria-label="Génération de Leads">Génération de Leads</a></li>
+                            <li><a href="#services" aria-label="Qualification de Prospects">Qualification de Prospects</a></li>
+                            <li><a href="#services" aria-label="Développement Commercial">Développement Commercial</a></li>
+                            <li><a href="#services" aria-label="Conseil Stratégique">Conseil Stratégique</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Entreprise</h4>
+                        <ul>
+                            <li><a href="#apropos" aria-label="À propos d'Astral">À Propos</a></li>
+                            <li><a href="#equipe" aria-label="Notre équipe">Notre Équipe</a></li>
+                            <li><a href="#carrieres" aria-label="Nos offres d'emploi">Carrières</a></li>
+                            <li><a href="#blog" aria-label="Notre blog">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Légal</h4>
+                        <ul>
+                            <li><a href="privacy-policy.html" aria-label="Politique de confidentialité">Politique de Confidentialité</a></li>
+                            <li><a href="terms.html" aria-label="Conditions d'utilisation">Conditions d'Utilisation</a></li>
+                            <li><a href="cookies.html" aria-label="Politique des cookies">Politique de Cookies</a></li>
+                            <li><a href="mentions-legales.html" aria-label="Mentions légales">Mentions Légales</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="footer-social">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-icons">
+                        <a href="#" target="_blank" rel="noopener" aria-label="Suivez-nous sur LinkedIn">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener" aria-label="Suivez-nous sur Twitter">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener" aria-label="Suivez-nous sur Facebook">
+                            <i class="fab fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener" aria-label="Suivez-nous sur Instagram">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Astral. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Astral",
+        "description": "Générateur de leads révolutionnaire avec paiement uniquement après conversion",
+        "url": "https://astralleads.fr",
+        "logo": "https://astralleads.fr/assets/astral-logo.svg",
+        "sameAs": [
+            "https://www.linkedin.com/company/astral-leads",
+            "https://twitter.com/astral_leads",
+            "https://facebook.com/astralleads",
+            "https://instagram.com/astral.leads"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+33-1-00-00-00-00",
+            "contactType": "sales",
+            "email": "contact@astralleads.fr",
+            "areaServed": "FR"
+        }
+    }
+    </script>
+
+    <script src="script.js" defer></script>
+</body>
+</html> 

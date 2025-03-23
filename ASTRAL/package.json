@@ -1,0 +1,26 @@
+{
+  "name": "astral-leads",
+  "version": "1.0.0",
+  "description": "Site web Astral Leads - Connecteur d'Opportunités",
+  "main": "index.html",
+  "scripts": {
+    "build": "node minify.js",
+    "serve": "serve dist"
+  },
+  "keywords": [
+    "astral",
+    "leads",
+    "génération",
+    "marketing",
+    "b2b"
+  ],
+  "author": "Astral Leads",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "clean-css": "^5.3.2",
+    "fs-extra": "^11.1.1",
+    "serve": "^14.2.0",
+    "terser": "^5.16.8"
+  }
+} 

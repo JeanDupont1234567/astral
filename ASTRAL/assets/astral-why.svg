@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+    <!-- Définitions des gradients et effets -->
+    <defs>
+        <!-- Gradient principal du bouclier - Contraste renforcé -->
+        <linearGradient id="shield-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#003B5F"/>
+            <stop offset="35%" stop-color="#004C7A"/>
+            <stop offset="65%" stop-color="#00A2FF"/>
+            <stop offset="100%" stop-color="#7FF1FF"/>
+        </linearGradient>
+        
+        <!-- Gradient pour le reflet principal -->
+        <linearGradient id="shine-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.5"/>
+            <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+        </linearGradient>
+
+        <!-- Gradient pour le reflet latéral -->
+        <linearGradient id="side-shine" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+            <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.3"/>
+            <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+        </linearGradient>
+
+        <!-- Effet de lueur -->
+        <filter id="glow-effect" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"/>
+            <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0   0 0 0 0 0.635   0 0 0 0 1  0 0 0 0.8 0"/>
+            <feBlend in="SourceGraphic" in2="blur" mode="normal"/>
+        </filter>
+
+        <!-- Motif subtil pour la texture -->
+        <pattern id="subtle-pattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M0 0L40 40M40 0L0 40" stroke="#FFFFFF" stroke-width="0.5" stroke-opacity="0.05"/>
+        </pattern>
+    </defs>
+
+    <!-- Bouclier principal -->
+    <g transform="translate(250, 250)" filter="url(#glow-effect)">
+        <!-- Forme de base du bouclier -->
+        <path d="M0,-220 
+                 L200,-180 
+                 L180,50
+                 C180,150 100,200 0,240
+                 C-100,200 -180,150 -180,50
+                 L-200,-180
+                 L0,-220Z" 
+              fill="url(#shield-gradient)" 
+              stroke="#00A2FF" 
+              stroke-width="2"/>
+
+        <!-- Effet de brillance supérieur -->
+        <path d="M0,-220 
+                 L200,-180 
+                 L180,-80
+                 C100,-100 -100,-100 -180,-80
+                 L-200,-180
+                 L0,-220Z" 
+              fill="url(#shine-gradient)" 
+              opacity="0.4"/>
+
+        <!-- Reflet latéral droit renforcé -->
+        <path d="M20,-200 
+                 L180,-170 
+                 L160,40
+                 C160,120 100,180 20,220
+                 C60,180 120,120 120,40
+                 L140,-170
+                 Z" 
+              fill="url(#side-shine)" 
+              opacity="0.35"/>
+
+        <!-- Bordure interne -->
+        <path d="M0,-200 
+                 L180,-160 
+                 L160,45
+                 C160,135 90,180 0,220
+                 C-90,180 -160,135 -160,45
+                 L-180,-160
+                 L0,-200Z" 
+              fill="none" 
+              stroke="#00A2FF" 
+              stroke-width="1"
+              stroke-opacity="0.3"/>
+
+        <!-- Points lumineux renforcés -->
+        <circle cx="140" cy="-100" r="2.5" fill="#FFFFFF" opacity="0.9"/>
+        <circle cx="160" cy="-60" r="2" fill="#FFFFFF" opacity="0.7"/>
+        <circle cx="150" cy="-20" r="1.5" fill="#FFFFFF" opacity="0.5"/>
+        <circle cx="140" cy="20" r="1" fill="#FFFFFF" opacity="0.4"/>
+    </g>
+
+    <!-- Effet de brillance externe -->
+    <circle cx="250" cy="250" r="190" 
+            fill="none" 
+            stroke="#00A2FF" 
+            stroke-width="1" 
+            stroke-dasharray="4,4" 
+            opacity="0.2">
+        <animate attributeName="stroke-dashoffset" 
+                 from="0" to="16" 
+                 dur="3s" 
+                 repeatCount="indefinite"/>
+    </circle>
+</svg> 

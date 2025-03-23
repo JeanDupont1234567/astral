@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+Disallow: /cgi-bin/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /*.php$
+Disallow: /*.js$
+Disallow: /*.css$
+
+# Protection des ressources
+Disallow: /assets/
+
+# Autorisation spécifique pour les images
+Allow: /assets/*.jpg
+Allow: /assets/*.jpeg
+Allow: /assets/*.png
+Allow: /assets/*.webp
+Allow: /assets/*.svg
+
+# Plan du site
+Sitemap: https://astralleads.fr/sitemap.xml 
